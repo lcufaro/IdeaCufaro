@@ -1,2 +1,11 @@
-import { Btn } from './Box.styles';
-export default () => <Btn onClick="alert('hola)">hola</Btn>;
+import { Container } from './Box.styles';
+
+//<Containers>
+const Box = ({ nombre, children }) => {
+    <div>
+        nombre
+        <p>hola</p>
+    </div>
+}
+
+export default Box;

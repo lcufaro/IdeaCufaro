@@ -3,3 +3,25 @@
     flex-direction: row;
 
 }
+
+.ItemBox {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ItemRow {
+    width: 10em;
+}
+
+.ItemRow,
+span {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.Agregar {
+    margin-top: 20px;
+}
