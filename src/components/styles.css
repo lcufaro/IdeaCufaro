@@ -4,6 +4,14 @@
 
 }
 
+.nabBtn {
+    margin-left: 20px;
+    color: blue;
+    height: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+}
+
 .ItemBox {
     height: 200px;
     display: flex;
@@ -24,4 +32,29 @@ span {
 
 .Agregar {
     margin-top: 20px;
+}
+
+
+.listaItem {
+    display: inline;
+    padding-left: 3px;
+    padding-right: 3px;
+    border: 11px;
+    border-color: black;
+
+}
+
+.listaItem div {
+    border-width: 2px;
+    background-color: burlywood;
+    width: 150px;
+}
+
+.foto {
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }

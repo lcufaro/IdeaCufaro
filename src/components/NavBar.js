@@ -9,8 +9,9 @@ function NavBar() {
     return <>
         <div className="container">
             <h3>Tienda IB</h3>
-            <button style={{ marginLeft: 50 }}>Home</button>
-            <button style={{ marginLeft: 50 }}>Comprar</button>
+            <button className="nabBtn">Home</button>
+            <button className="nabBtn">Balls</button>
+            <button className="nabBtn">Clubs</button>
             <span style={{ paddingLeft: 100 }}>
                 <CartWidget />  {carro}
             </span>
