@@ -17,13 +17,11 @@ const ItemListContainer = ({ greeting }) => {
     return (
         <>
             <div>
-                <p style={{ fontSize: 18 }}>
-                    {greeting}
-                </p>
-                <p><ItemCount stock="5" initial="1" /></p>
+                <p style={{ fontSize: 18 }}>  {greeting} </p>
+
             </div>
-            <div>
-                <ItemList items={productos} />
+            <div className="lista" >
+                <ItemList items={productos} style={{ cursor: 'pointer' }} />
             </div>
         </>
     );

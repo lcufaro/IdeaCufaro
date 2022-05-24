@@ -1,13 +1,15 @@
 import style from './styles.css'
+import ItemDetailContainer from './ItemDetailContainer'
+
 const Item = ({ item }) => {
     return <>
-        <li className="listaItem">
+        <li className="item">
             <div>
                 <h3 >{item.title}</h3>
                 <img src={item.pictureUrl} className="foto" />
                 <p>{item.description}</p>
                 <button>Ver detalle del Producto</button>
-                <p>Stock disponible: {item.stock}</p>
+                <ItemDetailContainer item={item} />
             </div>
 
         </li>

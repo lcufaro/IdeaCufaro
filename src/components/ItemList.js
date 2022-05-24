@@ -4,7 +4,7 @@ import style from './styles.css'
 const ItemList = ({ items }) => {
     return <>
 
-        <ul className="lista">
+        <ul className="listaItem">
             {items.map(item => (
                 <Item key={item.id} item={item} />
             ))}

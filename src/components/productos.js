@@ -19,3 +19,17 @@ export const baseProductos = () => new Promise((resolve, reject) => {
         }
     ]), 2000)
 });
+
+
+export const getItem = () => new Promise((resolve, reject) => {
+    setTimeout(() => resolve(
+        {
+            id: 1,
+            title: 'Balls',
+            description: 'Mr. Babbache ball',
+            price: 30,
+            pictureUrl: 'https://www.firetoys.eu/media/catalog/product/cache/5d6d96cb5e22bab60cddeb679efa32bd/m/mrb-beach-1kg-menu_1.jpg',
+            stock: 7
+        }
+    ), 2000)
+});
