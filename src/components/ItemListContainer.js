@@ -1,24 +1,31 @@
 import { useEffect, useState } from "react";
-import ItemCount from "./ItemCount";
+import { useParams } from 'react-router-dom';
 import ItemList from "./ItemList";
 import { baseProductos } from "./productos";
+import "./styles.css"
 
 const ItemListContainer = ({ greeting }) => {
     const [productos, setProductos] = useState([]);
 
+    const { id } = useParams(); //Siempre trae un string
+
+
+    console.log('el id es', id);
+
+
     useEffect(() => {
-        const getInfo = async () => {
+        const getInfo = async (id) => {
             const items = await baseProductos()
-            setProductos(items);
+            id !== undefined ? setProductos(items.filter(prod => prod.title === id)) : setProductos(items);
         }
-        getInfo();
-    }, [])
+        console.log('el id es2', id);
+        getInfo(id);
+    }, [id])
 
     return (
         <>
             <div>
-                <p style={{ fontSize: 18 }}>  {greeting} </p>
-
+                <h2> {greeting} </h2>
             </div>
             <div className="lista" >
                 <ItemList items={productos} style={{ cursor: 'pointer' }} />

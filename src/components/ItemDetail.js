@@ -1,9 +1,7 @@
-import style from './styles.css'
-import { useState } from 'react';
+import "./styles.css"
 import ItemCount from './ItemCount';
 
 const ItemDetail = ({ item }) => {
-    /* const [count, setCount] = useState(0); */
 
     return (
 
@@ -14,7 +12,7 @@ const ItemDetail = ({ item }) => {
                 <p className="itemTitle">{item.title} </p>
                 <img src={item.pictureUrl} className="foto" alt="imagen producto" />
                 <p >Descripcion: {item.description}</p>
-                <p >Precio: {item.precio}</p>
+
             </div>
             <ItemCount stock="5" initial="1" />
         </div>

@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import style from './styles.css'
+import "./styles.css"
 
 
 const ItemCount = ({ stock, initial, onAdd }) => {
@@ -10,7 +10,7 @@ const ItemCount = ({ stock, initial, onAdd }) => {
     const quitarItem = () => { setCount(count > 0 ? count - 1 : 0); }
 
     useEffect(() => {
-        setCount(initial != undefined ? Number(initial) : 0);
+        setCount(initial !== undefined ? Number(initial) : 0);
 
     }, [initial, stock])
 

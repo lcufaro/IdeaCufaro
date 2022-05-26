@@ -4,16 +4,9 @@
 
 }
 
-.nabBtn {
-    margin-left: 20px;
-    color: blue;
-    height: 40px;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: medium;
-}
 
 .ItemBox {
-    height: 200px;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,6 +25,7 @@ span {
 
 .Agregar {
     margin-top: 20px;
+    margin-bottom: 30px;
 }
 
 
@@ -44,13 +38,6 @@ span {
 }
 
 .listaItem {
-    /*
-    display: inline;
-    padding-left: 3px;
-    padding-right: 3px;
-    border: 11px;
-    border-color: black;
-    */
     margin: auto;
     border: 2px;
     border-color: black;
@@ -59,45 +46,52 @@ span {
     flex-direction: row;
     margin-top: 31px;
     margin-bottom: 80px;
-
+    list-style: none;
 }
 
 .item {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
     display: 'flex';
     flex-direction: 'row';
-    justify-content: 'space-around';
-    align-items: 'center';
-    /* width: '90%';*/
+    text-align: center;
     border-width: 2px;
     background-color: burlywood;
-    width: 400px;
+    width: 300px;
+    margin-right: 20px;
+    padding-bottom: 20px;
 }
+
 
 .itemTitle {
     font-size: large;
 }
 
 .foto {
-
-    border-radius: 200px;
-    max-width: 200px;
-    border: 15px solid #4bc9f0;
+    border-radius: 150px;
+    max-width: 150px;
+    max-height: 150px;
+    border: 1px solid #031920;
     display: block;
-    /*     
-    height: 100px;
-    width: 100px;
-    background-color: white;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    */
+    margin: 0px auto;
 }
 
 .detailInfo {
-    display: block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    display: 'flex';
+    flex-direction: 'row';
+    text-align: center;
+    border-width: 2px;
     background-color: white;
+    width: 300px;
+    margin-right: 20px;
+    padding-bottom: 20px;
+
+    /*
+    display: block;    
     align-items: center;
-    justify-content: center;
+    justify-content: center;*/
 }
 
 .description {
