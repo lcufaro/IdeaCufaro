@@ -1,11 +1,13 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import ItemCount from './ItemCount';
 import { useNavigate } from 'react-router-dom';
+import { Shop } from './CartContext'
 import "./styles.css"
 
 const ItemDetail = ({ item }) => {
     const navigate = useNavigate();
     const [quantity, setQuantity] = useState(0);
+    const { addItem } = useContext(Shop);
 
     const onComprar = (quantityToAdd) => {
         console.log('Cantidad comprada:' + quantityToAdd);
@@ -15,6 +17,7 @@ const ItemDetail = ({ item }) => {
     const onTerminar = () => {
         navigate('/cart');
         console.log("Terminó la compra");
+        addItem(item, quantity);
     }
 
     return (

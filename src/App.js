@@ -3,16 +3,19 @@ import ItemListContainer from './components/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer';
 import Cart from './components/Cart.js'
 import RoutesConfig from './app/RoutesConfig.js';
+import ShopProvider from './components/CartContext';
 
 
 function App() {
   return (
-    <div className="App">
+    <ShopProvider>
+      <div className="App">
 
-      <RoutesConfig />
+        <RoutesConfig />
 
-      { /*<ItemListContainer greeting="Bienvenido"></ItemListContainer>*/}
-    </div>
+        { /*<ItemListContainer greeting="Bienvenido"></ItemListContainer>*/}
+      </div>
+    </ShopProvider>
   );
 }
 
