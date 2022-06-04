@@ -15,7 +15,7 @@ const ItemDetail = ({ item }) => {
     }
 
     const onTerminar = () => {
-        navigate('/cart');
+        navigate('/order');
         console.log("Terminó la compra");
         addItem(item, quantity);
     }
