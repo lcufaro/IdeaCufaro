@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import "./styles.css"
 import "./navBar.css"
 
-let carro = 4;
+//let carro = 4;
 const NavBar = () => {
 
     return <>
@@ -26,7 +26,7 @@ const NavBar = () => {
                     <p className="nabBtn">Clubs</p>
                 </Link>
                 <span style={{ paddingLeft: 100 }}>
-                    <CartWidget />  {carro}
+                    <CartWidget />
                 </span>
             </nav>
         </div>

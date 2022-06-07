@@ -15,7 +15,7 @@ const SendOrder = () => {
     const [orderId, setOrderid] = useState();
 
     const onSubmit = (e) => {
-        e.preventDefault();
+        //e.preventDefault();
         //
         console.log('Orden Enviada');
         console.log('Name:' + name);
